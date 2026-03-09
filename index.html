@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Flow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <div class="floating-balloons" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <main class="flow-wrap">
+    <section class="flow-card" id="flowCard">
+    <div class="launch-countdown" id="launchCountdown" aria-live="polite">
+      <span id="countdownNumber">3</span>
+    </div>
+
+      <div class="flow-progress" aria-label="Story progress">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <article class="flow-step active" data-step="1">
+        <p class="badge">Birthday Story</p>
+        <h1>Happy Birthday, <span id="friendName">Bestie</span></h1>
+        <p class="subtitle">I made this little flow just for you. Enjoy the story.</p>
+      </article>
+
+      <article class="flow-step" data-step="2">
+        <h2>Your Smile</h2>
+        <figure class="hero-photo">
+          <img src="friend-photo.jpg" alt="Birthday girl smiling with pizza" />
+          <figcaption>My favorite smile in the world.</figcaption>
+        </figure>
+      </article>
+
+      <article class="flow-step" data-step="3">
+        <h2>A Special Message</h2>
+        <p id="typewriterText" class="typewriter"></p>
+      </article>
+
+      <article class="flow-step" data-step="4">
+        <h2>Little Reasons</h2>
+        <div class="mini-cards">
+          <p>You are kind.</p>
+          <p>You are strong.</p>
+          <p>You make people smile.</p>
+          <p>You are unforgettable.</p>
+        </div>
+      </article>
+
+      <article class="flow-step" data-step="5">
+        <h2>It Is Her Birthday Today. Let The Party Begin! 🎉</h2>
+        <p class="subtitle">Wishing you happiness, love, and success always.</p>
+      </article>
+    </section>
+  </main>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <audio id="bgMusic" loop preload="metadata" autoplay muted playsinline>
+    <source src="birthday-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
