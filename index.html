@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <div class="floating-balloons" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header class="hero card">
+    <p class="badge">A special surprise</p>
+    <h1>Happy Birthday, <span id="friendName">Cantik</span>!</h1>
+    <p class="subtitle">You make every day brighter. Today is all about you.</p>
+    <figure class="hero-photo">
+      <img src="friend-photo.jpg" alt="Birthday girl smiling with pizza" />
+      <figcaption>My favorite smile in the world.</figcaption>
+    </figure>
+    <p class="birthday-banner">It is her birthday today. Let the party begin! 🎉</p>
+    <div class="hero-actions">
+      <button id="confettiBtn" class="btn">Throw Confetti</button>
+      <button id="messageBtn" class="btn btn-outline">Open Secret Message</button>
+    </div>
+  </header>
+<div id="secretModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+    <div class="modal-content">
+      <h2 id="secretTitle">Secret Birthday Note</h2>
+      <p>
+        Thank you for being such an important part of my life. I hope this year brings you
+        happiness, success, peace, and everything your heart wants.
+      </p>
+      <p>Happy Birthday. You deserve the world.</p>
+      <button id="closeModal" class="btn">Close</button>
+    </div>
+  </div>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <audio id="bgMusic" loop preload="metadata" autoplay muted playsinline>
+    <source src="birthday-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
