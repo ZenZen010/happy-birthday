@@ -48,9 +48,16 @@
 
   <canvas id="confettiCanvas" aria-hidden="true"></canvas>
 
-  <audio id="bgMusic" loop preload="metadata" autoplay muted playsinline>
-    <source src="birthday-song.mp3" type="audio/mpeg" />
-  </audio>
+ <audio id="bgMusic" loop>
+  <source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function () {
+  const music = document.getElementById("bgMusic");
+  music.play();
+}, { once: true });
+</script>
 
   <script src="script.js"></script>
 </body>
